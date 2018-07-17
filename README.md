@@ -9,21 +9,21 @@
 
 ```
 
-## Build ##
+## Build in production mode ##
 
 ```
-    npm build
+    npm run build
 
 ```
-## Build and watch files ##
+## Build and watch files in development mode ##
 
 ```
-    npm dev
+    npm run dev
 
 ```
 ## Run static server ##
 
 ```
-    npm start
+    npm run start
 
 ```

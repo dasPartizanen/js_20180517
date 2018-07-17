@@ -27,7 +27,12 @@
     "webpack-cli": "^3.0.8"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
     "css-loader": "^1.0.0",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
     "style-loader": "^0.21.0"
   }
 }

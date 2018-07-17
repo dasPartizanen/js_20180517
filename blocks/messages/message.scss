@@ -1,5 +1,12 @@
 .message {
-    border: 1px solid #eee;
-    padding: 16px;
-    background-color: #fafafa;
+    &__author {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    &__text {
+        margin-top: 3px;
+        border: 1px solid #eee;
+        padding: 16px;
+        background-color: #fafafa;
+    }
 }

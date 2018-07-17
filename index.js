@@ -24,6 +24,7 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 
     let message = new Message({
+        author: 'dasPartizanen',
         message: 'Какое-то сообщение'
     });
 
@@ -32,4 +33,5 @@ window.addEventListener('DOMContentLoaded', function () {
     textarea.append(document.body);
     list.append(document.body);
     message.append(document.body);
+
 });

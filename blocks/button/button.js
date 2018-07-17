@@ -1,26 +1,21 @@
 import Block from '../block';
+import template from './button.pug';
 import './button.scss';
 
 export default class Button extends Block {
-
-    get name() {
-        return 'button';
-    }
 
     /**
      * Кнопка
      * @param {Object} obj
      * @param {string} obj.text - текст кнопки
-     * @param {string} [obj.type]
+     * @param {string} [obj.type] - тип кнопки
      */
-    constructor({ text, type }) {
+    constructor({ text, type = false }) {
         super();
 
-        this.el.textContent = text;
-        this.el.classList.toggle('button');
-        if (type) {
-            this.el.type = type;
-        }
-
+        this.template = template({
+            type: type,
+            text: text
+        });
     }
 }

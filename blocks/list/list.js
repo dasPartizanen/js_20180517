@@ -1,11 +1,8 @@
 import Block from '../block';
+import template from './list.pug';
 import './list.scss';
 
 export default class List extends Block {
-
-    get name () {
-        return 'ul';
-    }
 
     /**
      * Input
@@ -15,10 +12,9 @@ export default class List extends Block {
     constructor({ list }) {
         super();
 
-        this.el.classList.toggle('list', true);
-        this.el.innerHTML = list.map(item => {
-            return `<li class='list__item'>${item}</li>`
-        }).join('');
+        this.template = template({
+            items: list
+        })
     }
 
 }
