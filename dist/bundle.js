@@ -106,7 +106,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _block = __webpack_require__(/*! ../block */ \"./blocks/block.js\");\n\nvar _block2 = _interopRequireDefault(_block);\n\nvar _button = __webpack_require__(/*! ./button.pug */ \"./blocks/button/button.pug\");\n\nvar _button2 = _interopRequireDefault(_button);\n\n__webpack_require__(/*! ./button.scss */ \"./blocks/button/button.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Button = function (_Block) {\n    _inherits(Button, _Block);\n\n    /**\n     * Кнопка\n     * @param {Object} obj\n     * @param {string} obj.text - текст кнопки\n     * @param {string} [obj.type] - тип кнопки\n     */\n    function Button(_ref) {\n        var text = _ref.text,\n            _ref$type = _ref.type,\n            type = _ref$type === undefined ? false : _ref$type;\n\n        _classCallCheck(this, Button);\n\n        var _this = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this));\n\n        _this.template = (0, _button2.default)({\n            type: type,\n            text: text\n        });\n        return _this;\n    }\n\n    return Button;\n}(_block2.default);\n\nexports.default = Button;\n\n//# sourceURL=webpack:///./blocks/button/button.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _block = __webpack_require__(/*! ../block */ \"./blocks/block.js\");\n\nvar _block2 = _interopRequireDefault(_block);\n\nvar _button = __webpack_require__(/*! ./button.pug */ \"./blocks/button/button.pug\");\n\nvar _button2 = _interopRequireDefault(_button);\n\n__webpack_require__(/*! ./button.scss */ \"./blocks/button/button.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Button = function (_Block) {\n    _inherits(Button, _Block);\n\n    /**\n     * Кнопка\n     * @param {Object} obj\n     * @param {string} obj.text - текст кнопки\n     * @param {string} [obj.type] - тип кнопки\n     * @param {string} [obj.className] - имя модификатора или микса\n     */\n    function Button(_ref) {\n        var text = _ref.text,\n            _ref$type = _ref.type,\n            type = _ref$type === undefined ? false : _ref$type,\n            _ref$className = _ref.className,\n            className = _ref$className === undefined ? false : _ref$className;\n\n        _classCallCheck(this, Button);\n\n        var _this = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this));\n\n        _this.template = (0, _button2.default)({\n            type: type,\n            text: text,\n            className: className\n        });\n        return _this;\n    }\n\n    return Button;\n}(_block2.default);\n\nexports.default = Button;\n\n//# sourceURL=webpack:///./blocks/button/button.js?");
 
 /***/ }),
 
@@ -117,7 +117,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (text, type) {pug_html = pug_html + \"\\u003Cbutton\" + (\" class=\\\"button\\\"\"+pug.attr(\"type\", type, true, true)) + \"\\u003E\" + (pug.escape(null == (pug_interp = text) ? \"\" : pug_interp)) + \"\\u003C\\u002Fbutton\\u003E\";}.call(this,\"text\" in locals_for_with?locals_for_with.text:typeof text!==\"undefined\"?text:undefined,\"type\" in locals_for_with?locals_for_with.type:typeof type!==\"undefined\"?type:undefined));;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./blocks/button/button.pug?");
+eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (className, text, type) {pug_html = pug_html + \"\\u003Cbutton\" + (pug.attr(\"class\", pug.classes([\"button\",className], [false,true]), false, true)+pug.attr(\"type\", type, true, true)) + \"\\u003E\" + (pug.escape(null == (pug_interp = text) ? \"\" : pug_interp)) + \"\\u003C\\u002Fbutton\\u003E\";}.call(this,\"className\" in locals_for_with?locals_for_with.className:typeof className!==\"undefined\"?className:undefined,\"text\" in locals_for_with?locals_for_with.text:typeof text!==\"undefined\"?text:undefined,\"type\" in locals_for_with?locals_for_with.type:typeof type!==\"undefined\"?type:undefined));;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./blocks/button/button.pug?");
 
 /***/ }),
 
@@ -140,7 +140,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!../
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _block = __webpack_require__(/*! ../block */ \"./blocks/block.js\");\n\nvar _block2 = _interopRequireDefault(_block);\n\nvar _input = __webpack_require__(/*! ./input.pug */ \"./blocks/input/input.pug\");\n\nvar _input2 = _interopRequireDefault(_input);\n\n__webpack_require__(/*! ./input.scss */ \"./blocks/input/input.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Input = function (_Block) {\n    _inherits(Input, _Block);\n\n    /**\n     * Input\n     * @param {Object} obj\n     * @param {string} obj.placeholder - текст инпута,\n     * @param {string} [obj.type] - тип инпута (по умолчанию text)\n     * @param {string} [obj.value] - значение инпута\n     */\n    function Input(_ref) {\n        var placeholder = _ref.placeholder,\n            _ref$type = _ref.type,\n            type = _ref$type === undefined ? 'text' : _ref$type,\n            _ref$value = _ref.value,\n            value = _ref$value === undefined ? '' : _ref$value;\n\n        _classCallCheck(this, Input);\n\n        var _this = _possibleConstructorReturn(this, (Input.__proto__ || Object.getPrototypeOf(Input)).call(this));\n\n        _this.template = (0, _input2.default)({\n            type: type,\n            placeholder: placeholder,\n            value: value\n        });\n        return _this;\n    }\n\n    return Input;\n}(_block2.default);\n\nexports.default = Input;\n\n//# sourceURL=webpack:///./blocks/input/input.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _block = __webpack_require__(/*! ../block */ \"./blocks/block.js\");\n\nvar _block2 = _interopRequireDefault(_block);\n\nvar _input = __webpack_require__(/*! ./input.pug */ \"./blocks/input/input.pug\");\n\nvar _input2 = _interopRequireDefault(_input);\n\n__webpack_require__(/*! ./input.scss */ \"./blocks/input/input.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Input = function (_Block) {\n    _inherits(Input, _Block);\n\n    /**\n     * Input\n     * @param {Object} obj\n     * @param {string} obj.placeholder - текст инпута,\n     * @param {string} [obj.type] - тип инпута (по умолчанию text)\n     * @param {string} [obj.value] - значение инпута\n     */\n    function Input(_ref) {\n        var placeholder = _ref.placeholder,\n            _ref$type = _ref.type,\n            type = _ref$type === undefined ? 'text' : _ref$type,\n            _ref$value = _ref.value,\n            value = _ref$value === undefined ? '' : _ref$value,\n            _ref$className = _ref.className,\n            className = _ref$className === undefined ? false : _ref$className;\n\n        _classCallCheck(this, Input);\n\n        var _this = _possibleConstructorReturn(this, (Input.__proto__ || Object.getPrototypeOf(Input)).call(this));\n\n        _this.template = (0, _input2.default)({\n            type: type,\n            placeholder: placeholder,\n            value: value,\n            className: className\n        });\n        return _this;\n    }\n\n    return Input;\n}(_block2.default);\n\nexports.default = Input;\n\n//# sourceURL=webpack:///./blocks/input/input.js?");
 
 /***/ }),
 
@@ -151,7 +151,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (placeholder, type, value) {pug_html = pug_html + \"\\u003Cinput\" + (\" class=\\\"input\\\"\"+pug.attr(\"placeholder\", placeholder, true, true)+pug.attr(\"type\", type, true, true)+pug.attr(\"value\", value, true, true)) + \"\\u003E\";}.call(this,\"placeholder\" in locals_for_with?locals_for_with.placeholder:typeof placeholder!==\"undefined\"?placeholder:undefined,\"type\" in locals_for_with?locals_for_with.type:typeof type!==\"undefined\"?type:undefined,\"value\" in locals_for_with?locals_for_with.value:typeof value!==\"undefined\"?value:undefined));;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./blocks/input/input.pug?");
+eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (className, placeholder, type, value) {pug_html = pug_html + \"\\u003Cinput\" + (pug.attr(\"class\", pug.classes([\"input\",className], [false,true]), false, true)+pug.attr(\"placeholder\", placeholder, true, true)+pug.attr(\"type\", type, true, true)+pug.attr(\"value\", value, true, true)) + \"\\u003E\";}.call(this,\"className\" in locals_for_with?locals_for_with.className:typeof className!==\"undefined\"?className:undefined,\"placeholder\" in locals_for_with?locals_for_with.placeholder:typeof placeholder!==\"undefined\"?placeholder:undefined,\"type\" in locals_for_with?locals_for_with.type:typeof type!==\"undefined\"?type:undefined,\"value\" in locals_for_with?locals_for_with.value:typeof value!==\"undefined\"?value:undefined));;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./blocks/input/input.pug?");
 
 /***/ }),
 
@@ -166,74 +166,6 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!../
 
 /***/ }),
 
-/***/ "./blocks/list/list.js":
-/*!*****************************!*\
-  !*** ./blocks/list/list.js ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _block = __webpack_require__(/*! ../block */ \"./blocks/block.js\");\n\nvar _block2 = _interopRequireDefault(_block);\n\nvar _list = __webpack_require__(/*! ./list.pug */ \"./blocks/list/list.pug\");\n\nvar _list2 = _interopRequireDefault(_list);\n\n__webpack_require__(/*! ./list.scss */ \"./blocks/list/list.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar List = function (_Block) {\n    _inherits(List, _Block);\n\n    /**\n     * Input\n     * @param {Object} obj\n     * @param {string} obj.list - массив с элементами списка\n     */\n    function List(_ref) {\n        var list = _ref.list;\n\n        _classCallCheck(this, List);\n\n        var _this = _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).call(this));\n\n        _this.template = (0, _list2.default)({\n            items: list\n        });\n        return _this;\n    }\n\n    return List;\n}(_block2.default);\n\nexports.default = List;\n\n//# sourceURL=webpack:///./blocks/list/list.js?");
-
-/***/ }),
-
-/***/ "./blocks/list/list.pug":
-/*!******************************!*\
-  !*** ./blocks/list/list.pug ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (items) {pug_html = pug_html + \"\\u003Cul class=\\\"list\\\"\\u003E\";\n// iterate items\n;(function(){\n  var $$obj = items;\n  if ('number' == typeof $$obj.length) {\n      for (var pug_index0 = 0, $$l = $$obj.length; pug_index0 < $$l; pug_index0++) {\n        var item = $$obj[pug_index0];\npug_html = pug_html + \"\\u003Cli class=\\\"list__item\\\"\\u003E\" + (pug.escape(null == (pug_interp = item) ? \"\" : pug_interp)) + \"\\u003C\\u002Fli\\u003E\";\n      }\n  } else {\n    var $$l = 0;\n    for (var pug_index0 in $$obj) {\n      $$l++;\n      var item = $$obj[pug_index0];\npug_html = pug_html + \"\\u003Cli class=\\\"list__item\\\"\\u003E\" + (pug.escape(null == (pug_interp = item) ? \"\" : pug_interp)) + \"\\u003C\\u002Fli\\u003E\";\n    }\n  }\n}).call(this);\n\npug_html = pug_html + \"\\u003C\\u002Ful\\u003E\";}.call(this,\"items\" in locals_for_with?locals_for_with.items:typeof items!==\"undefined\"?items:undefined));;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./blocks/list/list.pug?");
-
-/***/ }),
-
-/***/ "./blocks/list/list.scss":
-/*!*******************************!*\
-  !*** ./blocks/list/list.scss ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js!./list.scss */ \"./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./blocks/list/list.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./blocks/list/list.scss?");
-
-/***/ }),
-
-/***/ "./blocks/messages/message.pug":
-/*!*************************************!*\
-  !*** ./blocks/messages/message.pug ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (author, text) {pug_html = pug_html + \"\\u003Cdiv class=\\\"message\\\"\\u003E\\u003Cp class=\\\"message__author\\\"\\u003E\" + (pug.escape(null == (pug_interp = author) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003Cp class=\\\"message__text\\\"\\u003E\" + (pug.escape(null == (pug_interp = text) ? \"\" : pug_interp)) + \"\\u003C\\u002Fp\\u003E\\u003C\\u002Fdiv\\u003E\";}.call(this,\"author\" in locals_for_with?locals_for_with.author:typeof author!==\"undefined\"?author:undefined,\"text\" in locals_for_with?locals_for_with.text:typeof text!==\"undefined\"?text:undefined));;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./blocks/messages/message.pug?");
-
-/***/ }),
-
-/***/ "./blocks/messages/message.scss":
-/*!**************************************!*\
-  !*** ./blocks/messages/message.scss ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js!./message.scss */ \"./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./blocks/messages/message.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./blocks/messages/message.scss?");
-
-/***/ }),
-
-/***/ "./blocks/messages/messages.js":
-/*!*************************************!*\
-  !*** ./blocks/messages/messages.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _block = __webpack_require__(/*! ../block */ \"./blocks/block.js\");\n\nvar _block2 = _interopRequireDefault(_block);\n\nvar _message = __webpack_require__(/*! ./message.pug */ \"./blocks/messages/message.pug\");\n\nvar _message2 = _interopRequireDefault(_message);\n\n__webpack_require__(/*! ./message.scss */ \"./blocks/messages/message.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Message = function (_Block) {\n    _inherits(Message, _Block);\n\n    /**\n     * Input\n     * @param {Object} obj\n     * @param {string} obj.author - имя автора сообщения\n     * @param {string} obj.message - текст сообщения\n     */\n    function Message(_ref) {\n        var message = _ref.message,\n            author = _ref.author;\n\n        _classCallCheck(this, Message);\n\n        var _this = _possibleConstructorReturn(this, (Message.__proto__ || Object.getPrototypeOf(Message)).call(this));\n\n        _this.template = (0, _message2.default)({\n            text: message,\n            author: author\n        });\n        return _this;\n    }\n\n    return Message;\n}(_block2.default);\n\nexports.default = Message;\n\n//# sourceURL=webpack:///./blocks/messages/messages.js?");
-
-/***/ }),
-
 /***/ "./blocks/reset.scss":
 /*!***************************!*\
   !*** ./blocks/reset.scss ***!
@@ -245,40 +177,6 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader!../nod
 
 /***/ }),
 
-/***/ "./blocks/textarea/textarea.js":
-/*!*************************************!*\
-  !*** ./blocks/textarea/textarea.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _block = __webpack_require__(/*! ../block */ \"./blocks/block.js\");\n\nvar _block2 = _interopRequireDefault(_block);\n\nvar _textarea = __webpack_require__(/*! ./textarea.pug */ \"./blocks/textarea/textarea.pug\");\n\nvar _textarea2 = _interopRequireDefault(_textarea);\n\n__webpack_require__(/*! ./textarea.scss */ \"./blocks/textarea/textarea.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar Textarea = function (_Block) {\n    _inherits(Textarea, _Block);\n\n    /**\n     * Input\n     * @param {Object} obj\n     * @param {string} obj.placeholder - текст поля\n     */\n    function Textarea(_ref) {\n        var placeholder = _ref.placeholder;\n\n        _classCallCheck(this, Textarea);\n\n        var _this = _possibleConstructorReturn(this, (Textarea.__proto__ || Object.getPrototypeOf(Textarea)).call(this));\n\n        _this.template = (0, _textarea2.default)({\n            placeholder: placeholder\n        });\n        return _this;\n    }\n\n    return Textarea;\n}(_block2.default);\n\nexports.default = Textarea;\n\n//# sourceURL=webpack:///./blocks/textarea/textarea.js?");
-
-/***/ }),
-
-/***/ "./blocks/textarea/textarea.pug":
-/*!**************************************!*\
-  !*** ./blocks/textarea/textarea.pug ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;;var locals_for_with = (locals || {});(function (placeholder) {pug_html = pug_html + \"\\u003Ctextarea\" + (\" class=\\\"textarea\\\"\"+pug.attr(\"placeholder\", placeholder, true, true)) + \"\\u003E\\u003C\\u002Ftextarea\\u003E\";}.call(this,\"placeholder\" in locals_for_with?locals_for_with.placeholder:typeof placeholder!==\"undefined\"?placeholder:undefined));;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./blocks/textarea/textarea.pug?");
-
-/***/ }),
-
-/***/ "./blocks/textarea/textarea.scss":
-/*!***************************************!*\
-  !*** ./blocks/textarea/textarea.scss ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js!./textarea.scss */ \"./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./blocks/textarea/textarea.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./blocks/textarea/textarea.scss?");
-
-/***/ }),
-
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
@@ -287,7 +185,19 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!../
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _button = __webpack_require__(/*! ./blocks/button/button */ \"./blocks/button/button.js\");\n\nvar _button2 = _interopRequireDefault(_button);\n\nvar _input = __webpack_require__(/*! ./blocks/input/input */ \"./blocks/input/input.js\");\n\nvar _input2 = _interopRequireDefault(_input);\n\nvar _list = __webpack_require__(/*! ./blocks/list/list */ \"./blocks/list/list.js\");\n\nvar _list2 = _interopRequireDefault(_list);\n\nvar _textarea = __webpack_require__(/*! ./blocks/textarea/textarea */ \"./blocks/textarea/textarea.js\");\n\nvar _textarea2 = _interopRequireDefault(_textarea);\n\nvar _messages = __webpack_require__(/*! ./blocks/messages/messages */ \"./blocks/messages/messages.js\");\n\nvar _messages2 = _interopRequireDefault(_messages);\n\n__webpack_require__(/*! ./blocks/reset.scss */ \"./blocks/reset.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nwindow.addEventListener('DOMContentLoaded', function () {\n\n    var button = new _button2.default({\n        text: 'Тестовая кнопка'\n    });\n\n    var input = new _input2.default({\n        placeholder: 'Тестовый инпут'\n    });\n\n    var list = new _list2.default({\n        list: ['первый', 'второй', 'третий']\n    });\n\n    var textarea = new _textarea2.default({\n        placeholder: 'Введите текст'\n    });\n\n    var message = new _messages2.default({\n        author: 'dasPartizanen',\n        message: 'Какое-то сообщение'\n    });\n\n    button.append(document.body);\n    input.append(document.body);\n    textarea.append(document.body);\n    list.append(document.body);\n    message.append(document.body);\n});\n\n//# sourceURL=webpack:///./index.js?");
+eval("\n\nvar _router = __webpack_require__(/*! ./modules/router */ \"./modules/router.js\");\n\nvar _router2 = _interopRequireDefault(_router);\n\nvar _login = __webpack_require__(/*! ./views/login/login */ \"./views/login/login.js\");\n\nvar _login2 = _interopRequireDefault(_login);\n\n__webpack_require__(/*! ./blocks/reset.scss */ \"./blocks/reset.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nwindow.addEventListener('DOMContentLoaded', function () {\n    var router = new _router2.default();\n\n    var loginView = new _login2.default({\n        el: document.querySelector('.js-login')\n    });\n\n    router.route('login', loginView);\n\n    router.start();\n});\n\n//# sourceURL=webpack:///./index.js?");
+
+/***/ }),
+
+/***/ "./modules/router.js":
+/*!***************************!*\
+  !*** ./modules/router.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar Router = function () {\n    function Router() {\n        _classCallCheck(this, Router);\n\n        this.routes = {};\n    }\n\n    /**\n     * Добавить новый маршрут\n     * @param {string} path - маршрут\n     * @param {View} view - вьюха которая должна быть показана по маршруту\n    */\n\n\n    _createClass(Router, [{\n        key: 'route',\n        value: function route(path, view) {\n            this.routes[path] = view;\n            return this;\n        }\n    }, {\n        key: '_onRoute',\n        value: function _onRoute(path) {\n            path = path.replace('#', '');\n\n            var view = this.routes[path];\n\n            if (this.current) {\n                this.current.hide();\n            }\n\n            if (view) {\n                view.show();\n                this.current = view;\n            }\n        }\n    }, {\n        key: 'start',\n        value: function start() {\n            var _this = this;\n\n            window.addEventListener('hashchange', function () {\n                _this._onRoute(location.hash);\n            });\n\n            this._onRoute(location.hash);\n        }\n    }]);\n\n    return Router;\n}();\n\nexports.default = Router;\n\n//# sourceURL=webpack:///./modules/router.js?");
 
 /***/ }),
 
@@ -313,28 +223,6 @@ eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./blocks/list/list.scss":
-/*!**************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./blocks/list/list.scss ***!
-  \**************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".list {\\n  padding-left: 30px;\\n  list-style-type: disc; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./blocks/list/list.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./blocks/messages/message.scss":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./blocks/messages/message.scss ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".message__author {\\n  font-size: 12px;\\n  font-weight: bold; }\\n\\n.message__text {\\n  margin-top: 3px;\\n  border: 1px solid #eee;\\n  padding: 16px;\\n  background-color: #fafafa; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./blocks/messages/message.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./blocks/reset.scss":
 /*!**********************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./blocks/reset.scss ***!
@@ -346,14 +234,14 @@ eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loa
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./blocks/textarea/textarea.scss":
-/*!**********************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./blocks/textarea/textarea.scss ***!
-  \**********************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./views/login/login.scss":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./views/login/login.scss ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".textarea {\\n  padding: 8px 10px;\\n  border: 1px solid #ccc;\\n  box-shadow: inset 0 1px 3px #ddd;\\n  border-radius: 4px;\\n  vertical-align: middle;\\n  box-sizing: border-box;\\n  transition: border-color .35s ease-in-out;\\n  font-size: 14px; }\\n  .textarea:focus {\\n    border-color: #129FEA; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./blocks/textarea/textarea.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./views/login/login.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
@@ -399,6 +287,52 @@ eval("/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAu
 /***/ (function(module, exports) {
 
 eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element with a data-uri to\n * embed the css on the page. This breaks all relative urls because now they are relative to a\n * bundle instead of the current page.\n *\n * One solution is to only use full urls, but that may be impossible.\n *\n * Instead, this function \"fixes\" the relative urls to be absolute according to the current page location.\n *\n * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.\n *\n */\n\nmodule.exports = function (css) {\n  // get current location\n  var location = typeof window !== \"undefined\" && window.location;\n\n  if (!location) {\n    throw new Error(\"fixUrls requires window.location\");\n  }\n\n\t// blank or null?\n\tif (!css || typeof css !== \"string\") {\n\t  return css;\n  }\n\n  var baseUrl = location.protocol + \"//\" + location.host;\n  var currentDir = baseUrl + location.pathname.replace(/\\/[^\\/]*$/, \"/\");\n\n\t// convert each url(...)\n\t/*\n\tThis regular expression is just a way to recursively match brackets within\n\ta string.\n\n\t /url\\s*\\(  = Match on the word \"url\" with any whitespace after it and then a parens\n\t   (  = Start a capturing group\n\t     (?:  = Start a non-capturing group\n\t         [^)(]  = Match anything that isn't a parentheses\n\t         |  = OR\n\t         \\(  = Match a start parentheses\n\t             (?:  = Start another non-capturing groups\n\t                 [^)(]+  = Match anything that isn't a parentheses\n\t                 |  = OR\n\t                 \\(  = Match a start parentheses\n\t                     [^)(]*  = Match anything that isn't a parentheses\n\t                 \\)  = Match a end parentheses\n\t             )  = End Group\n              *\\) = Match anything and then a close parens\n          )  = Close non-capturing group\n          *  = Match anything\n       )  = Close capturing group\n\t \\)  = Match a close parens\n\n\t /gi  = Get all matches, not the first.  Be case insensitive.\n\t */\n\tvar fixedCss = css.replace(/url\\s*\\(((?:[^)(]|\\((?:[^)(]+|\\([^)(]*\\))*\\))*)\\)/gi, function(fullMatch, origUrl) {\n\t\t// strip quotes (if they exist)\n\t\tvar unquotedOrigUrl = origUrl\n\t\t\t.trim()\n\t\t\t.replace(/^\"(.*)\"$/, function(o, $1){ return $1; })\n\t\t\t.replace(/^'(.*)'$/, function(o, $1){ return $1; });\n\n\t\t// already a full url? no change\n\t\tif (/^(#|data:|http:\\/\\/|https:\\/\\/|file:\\/\\/\\/|\\s*$)/i.test(unquotedOrigUrl)) {\n\t\t  return fullMatch;\n\t\t}\n\n\t\t// convert the url to a full url\n\t\tvar newUrl;\n\n\t\tif (unquotedOrigUrl.indexOf(\"//\") === 0) {\n\t\t  \t//TODO: should we add protocol?\n\t\t\tnewUrl = unquotedOrigUrl;\n\t\t} else if (unquotedOrigUrl.indexOf(\"/\") === 0) {\n\t\t\t// path should be relative to the base url\n\t\t\tnewUrl = baseUrl + unquotedOrigUrl; // already starts with '/'\n\t\t} else {\n\t\t\t// path should be relative to current directory\n\t\t\tnewUrl = currentDir + unquotedOrigUrl.replace(/^\\.\\//, \"\"); // Strip leading './'\n\t\t}\n\n\t\t// send back the fixed url(...)\n\t\treturn \"url(\" + JSON.stringify(newUrl) + \")\";\n\t});\n\n\t// send back the fixed css\n\treturn fixedCss;\n};\n\n\n//# sourceURL=webpack:///./node_modules/style-loader/lib/urls.js?");
+
+/***/ }),
+
+/***/ "./views/login/login.js":
+/*!******************************!*\
+  !*** ./views/login/login.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _input = __webpack_require__(/*! ../../blocks/input/input */ \"./blocks/input/input.js\");\n\nvar _input2 = _interopRequireDefault(_input);\n\nvar _button = __webpack_require__(/*! ../../blocks/button/button */ \"./blocks/button/button.js\");\n\nvar _button2 = _interopRequireDefault(_button);\n\nvar _views = __webpack_require__(/*! ../views */ \"./views/views.js\");\n\nvar _views2 = _interopRequireDefault(_views);\n\nvar _login = __webpack_require__(/*! ./login.pug */ \"./views/login/login.pug\");\n\nvar _login2 = _interopRequireDefault(_login);\n\n__webpack_require__(/*! ./login.scss */ \"./views/login/login.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar LoginView = function (_View) {\n    _inherits(LoginView, _View);\n\n    _createClass(LoginView, [{\n        key: 'bemName',\n        get: function get() {\n            return 'login';\n        }\n    }]);\n\n    function LoginView(_ref) {\n        var el = _ref.el;\n\n        _classCallCheck(this, LoginView);\n\n        var _this = _possibleConstructorReturn(this, (LoginView.__proto__ || Object.getPrototypeOf(LoginView)).call(this, { el: el }));\n\n        _this.render(_login2.default);\n\n        _this.name = new _input2.default({\n            className: _this.bemName + '__input',\n            placeholder: 'Имя'\n        });\n\n        _this.pwd = new _input2.default({\n            className: _this.bemName + '__input',\n            placeholder: 'Пароль',\n            type: 'password'\n        });\n\n        _this.button = new _button2.default({\n            text: 'Войти',\n            type: 'submit'\n        });\n\n        _this.addBlock(_this.name).addBlock(_this.pwd).addBlock(_this.button);\n        return _this;\n    }\n\n    return LoginView;\n}(_views2.default);\n\nexports.default = LoginView;\n\n//# sourceURL=webpack:///./views/login/login.js?");
+
+/***/ }),
+
+/***/ "./views/login/login.pug":
+/*!*******************************!*\
+  !*** ./views/login/login.pug ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var pug = __webpack_require__(/*! ../../node_modules/pug-runtime/index.js */ \"./node_modules/pug-runtime/index.js\");\n\nfunction template(locals) {var pug_html = \"\", pug_mixins = {}, pug_interp;pug_html = pug_html + \"\\u003Cform class=\\\"login\\\"\\u003E\\u003C\\u002Fform\\u003E\";;return pug_html;};\nmodule.exports = template;\n\n//# sourceURL=webpack:///./views/login/login.pug?");
+
+/***/ }),
+
+/***/ "./views/login/login.scss":
+/*!********************************!*\
+  !*** ./views/login/login.scss ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js!./login.scss */ \"./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./views/login/login.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./views/login/login.scss?");
+
+/***/ }),
+
+/***/ "./views/views.js":
+/*!************************!*\
+  !*** ./views/views.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar View = function () {\n    function View(_ref) {\n        var el = _ref.el;\n\n        _classCallCheck(this, View);\n\n        this.el = el;\n        this.hide();\n    }\n\n    _createClass(View, [{\n        key: \"render\",\n        value: function render(template) {\n            this.el.innerHTML = template();\n        }\n    }, {\n        key: \"show\",\n        value: function show() {\n            this.el.hidden = false;\n        }\n    }, {\n        key: \"hide\",\n        value: function hide() {\n            this.el.hidden = true;\n        }\n    }, {\n        key: \"addBlock\",\n        value: function addBlock(block) {\n            block.append(this.el.querySelector(\".\" + this.bemName));\n            return this;\n        }\n    }]);\n\n    return View;\n}();\n\nexports.default = View;\n\n//# sourceURL=webpack:///./views/views.js?");
 
 /***/ }),
 

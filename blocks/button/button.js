@@ -9,13 +9,15 @@ export default class Button extends Block {
      * @param {Object} obj
      * @param {string} obj.text - текст кнопки
      * @param {string} [obj.type] - тип кнопки
+     * @param {string} [obj.className] - имя модификатора или микса
      */
-    constructor({ text, type = false }) {
+    constructor({ text, type = false, className = false }) {
         super();
 
         this.template = template({
             type: type,
-            text: text
+            text: text,
+            className: className
         });
     }
 }

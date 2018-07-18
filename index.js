@@ -1,37 +1,16 @@
-import Button from './blocks/button/button';
-import Input from './blocks/input/input';
-import List from './blocks/list/list';
-import Textarea from './blocks/textarea/textarea';
-import Message from './blocks/messages/messages';
+import Router from './modules/router';
+import LoginView from './views/login/login';
 import './blocks/reset.scss';
 
 window.addEventListener('DOMContentLoaded', function () {
+    let router = new Router();
 
-    let button = new Button({
-        text: 'Тестовая кнопка'
+    let loginView = new LoginView({
+        el: document.querySelector('.js-login')
     });
 
-    let input = new Input({
-        placeholder: 'Тестовый инпут'
-    });
+    router
+        .route('login', loginView);
 
-    let list = new List({
-        list: ['первый', 'второй', 'третий']
-    });
-
-    let textarea = new Textarea({
-        placeholder: 'Введите текст'
-    });
-
-    let message = new Message({
-        author: 'dasPartizanen',
-        message: 'Какое-то сообщение'
-    });
-
-    button.append(document.body);
-    input.append(document.body);
-    textarea.append(document.body);
-    list.append(document.body);
-    message.append(document.body);
-
+    router.start();
 });
