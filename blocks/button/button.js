@@ -19,5 +19,7 @@ export default class Button extends Block {
             text: text,
             className: className
         });
+
     }
+
 }

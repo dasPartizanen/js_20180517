@@ -34,11 +34,13 @@ export default class SignupView extends View {
         });
 
         this.button = new Button({
+            className: `${this.bemName}__button`,
             text: 'Зарегистрироваться',
             type: 'submit'
         });
 
         this.link = new Link({
+            className: `${this.bemName}__link`,
             href: '#login',
             text: 'Логин'
         });

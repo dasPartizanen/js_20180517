@@ -17,8 +17,12 @@ export default class View {
         this.el.hidden = true;
     }
 
-    addBlock(block) {
-        block.append(this.el.querySelector(`.${this.bemName}`));
+    addBlock(block, name) {
+        if (name) {
+            block.append(this.el.querySelector(`.${this.bemName}__${name}`));
+        } else {
+            block.append(this.el.querySelector(`.${this.bemName}`));
+        }
         return this;
     }
 

@@ -1,12 +1,26 @@
 .message {
+
+    &_owner {
+        align-self: flex-end;
+    }
     &__author {
         font-size: 12px;
         font-weight: bold;
+        color: #fff;
+        opacity: .8;
     }
     &__text {
         margin-top: 3px;
-        border: 1px solid #eee;
         padding: 16px;
-        background-color: #fafafa;
+        color: #838b8d;
+        font-size: 14px;
+        background-color: #1D232A;
+        border-radius: 0 10px 10px 10px;
+
+        .message_owner & {
+            border-radius: 10px 10px 0 10px;
+            background-color: #323E46;
+            color: #fff;
+        }
     }
 }

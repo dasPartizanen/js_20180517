@@ -1,4 +1,9 @@
 .link {
-    color: #3b8bba;
+    color: #F2942B;
     text-decoration: none;
+    transition: color .35s ease-in-out;
+
+    &:hover {
+        color: #FDBE2C;
+    }
 }

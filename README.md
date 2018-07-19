@@ -26,6 +26,6 @@ https://daspartizanen.github.io/js_20180517/
 ## Run static server ##
 
 ```
-    npm run start
+    npm start
 
 ```

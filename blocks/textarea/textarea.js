@@ -8,12 +8,14 @@ export default class Textarea extends Block {
      * Input
      * @param {Object} obj
      * @param {string} obj.placeholder - placeholder поля
+     * @param {string} [obj.className] - имя модификатора или микса
      */
-    constructor({ placeholder }) {
+    constructor({ placeholder, className = false }) {
         super();
 
         this.template = template({
-            placeholder: placeholder
+            placeholder: placeholder,
+            className: className
         });
     }
 

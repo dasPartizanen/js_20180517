@@ -18,21 +18,25 @@ export default class LoginView extends View {
 
         this.name = new Input({
             className: `${this.bemName}__input`,
-            placeholder: 'Имя'
+            placeholder: 'Имя',
+            name: 'name'
         });
 
         this.pwd = new Input({
             className: `${this.bemName}__input`,
             placeholder: 'Пароль',
-            type: 'password'
+            type: 'password',
+            name: 'password'
         });
 
         this.button = new Button({
+            className: `${this.bemName}__button`,
             text: 'Войти',
             type: 'submit'
         });
 
         this.link = new Link({
+            className: `${this.bemName}__link`,
             href: '#signup',
             text: 'Регистрация'
         });
@@ -42,6 +46,11 @@ export default class LoginView extends View {
             .addBlock(this.pwd)
             .addBlock(this.button)
             .addBlock(this.link);
+
+        this.el.addEventListener('submit', function (e) {
+            console.log(e.target.querySelector('input[name=name]').value);
+            e.preventDefault(); // убираем сабмит формы
+        })
     }
 
 }
